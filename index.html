@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Geonames Exercise</title>
+		<meta name="description" content="Geonames exercise using AJAX, PHP, CURL, JSON">
+		<meta name="author" content="Laurie Nicholl">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+
+	<body>
+		<div id="weatherInput">
+			<h3>Weather station with most recent weather observation</h3>
+			<p>Select latitude + longitude of destination:</p>
+			<select id="selWeatherLat">
+				<option value="44.02349">44.02349</option>
+				<option value="-25.03254">-25.03254</option>
+				<option value="16.42309">16.42309</option>
+			</select>
+
+			<select id="selWeatherLng">
+				<option value="2.77788">2.77788</option>
+				<option value="32.38270">32.38270</option>
+				<option value="103.03401">103.03401</option>
+			</select>
+			
+			<button id="btnRun1">Run</button>
+		</div>
+
+		<br>
+
+		<div id="weatherResults">
+			
+			<table>
+
+				<tr>
+					<td>
+						<p>Station name:</p>
+					</td>
+					<td id="weatherStationName">
+						
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p>Temperature (<sup>o</sup>C):</p>
+					</td>
+					<td id="weatherTemperature">
+						
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p>Cloud cover:</p>
+					</td>
+					<td id="weatherClouds">
+						
+					</td>
+				</tr>
+
+			</table>
+		</div>
+
+		<br><hr>
+
+		<div id="oceanInput">
+			<h3>Nearest ocean to coordinates</h3>
+			<p>Select latitude + longitude of destination:</p>
+			<select id="selOceanLat">
+				<option value="-41.64528">-41.64528</option>
+				<option value="4.03774">4.03774</option>
+				<option value="54.31736">54.31736</option>
+			</select>
+
+			<select id="selOceanLng">
+				<option value="3.50039">3.50039</option>
+				<option value="120.05080">120.05080</option>
+				<option value="2.36733">2.36733</option>
+			</select>
+			
+			<button id="btnRun2">Run</button>
+		</div>
+
+		<br>
+
+		<div id="oceanResults">
+			
+			<table>
+
+				<tr>
+					<td>
+						<p>Ocean name:</p>
+					</td>
+					<td id="oceanName">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+						<p>Geoname ID:</p>
+					</td>
+					<td id="oceanGeonameId">
+						
+					</td>
+				</tr>
+
+			</table>
+
+		</div>
+
+		<br><hr>
+
+		<div id="placeInput">
+			<h3>Closest populated place to coordinates</h3>
+			<p>Select latitude + longitude of destination:</p>
+			<select id="selPlaceLat">
+				<option value="57.61161">57.61161</option>
+				<option value="-16.70230">-16.70230</option>
+				<option value="50.50546">50.50546</option>
+			</select>
+
+			<select id="selPlaceLng">
+				<option value="38.06338">38.06338</option>
+				<option value="-40.21788">-40.21788</option>
+				<option value="135.29398">135.29398</option>
+			</select>
+			
+			<button id="btnRun3">Run</button>
+		</div>
+
+		<br>
+
+		<div id="placeResults">
+			
+			<table>
+
+				<tr>
+					<td>
+						<p>Distance from coordinates (km):</p>
+					</td>
+					<td id="placeDistance">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+						<p>Place name:</p>
+					</td>
+					<td id="placeName">
+						
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p>Country name:</p>
+					</td>
+					<td id="placeCountryName">
+						
+					</td>
+
+				</tr>
+
+			</table>
+
+		</div>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
